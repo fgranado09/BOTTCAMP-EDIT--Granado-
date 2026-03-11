@@ -1,8 +1,28 @@
+# Clase UNO - 04/03/2026
 
 # Roadmap
 
  * Python
+ * Git
+ * Bases de datos relacionales
+   *SQL
+   *SQlite / Postgres / MySQL
  * IA para programadores
+   * Ver herramientas que me ayuden a programar
+   * Como utilizar la IA con criterio para programar
+ * Aplicaciones inteligentes
+   * Uso de LLM mediante Api
+   * Agentes
+   * Agentes conversacionales (Chatbot especializado en algo: atencion al cliente)
+   * Agentes autonomos (Posteos en redes sociales, actua de manera automatica)
+   
+
+# Arquitectura Full-Stack
+
+* Front-end
+* Backend
+  *Bases de datos relacionales
+   
 
 
 # Tareas

@@ -27,6 +27,8 @@
 
 * Colab de la clase
 > https://colab.research.google.com/drive/1_ecrF_2YjlNHYSldkTU3OJAFp_mrgqGR?usp=sharing
+* Preguntas a chatgpt
+> https://chatgpt.com/share/69b3462e-5660-8007-9cc7-7b38799c0f12
 
 # Condicionales
 
@@ -57,6 +59,7 @@ elif isinstance(variable, str):
   * print
   * input
   * isinstance
+  * id
 
 * Funciones de objetos
   * Los objetos / variables de tipo str
@@ -64,7 +67,39 @@ elif isinstance(variable, str):
     * replace
   * Los objetos / variables de tipo int
     * bit_length
-    * 
+   
+## Operadores
+
+
+* == : Compara el contennido de dos variables
+* is : Dice si las dos variables son el mismo objeto
+   
+## Identidades de objetos en python
+
+```python
+uno = 1
+otro_uno = 1
+print(id(uno))
+print(id(otro_uno))
+
+if uno == otro_uno:
+  print("Las dos variables almacenan el mismo valor")
+
+if uno is otro_uno:
+  print("Las dos variables son el mismo objeto, son lo mismo")
+
+mil = 1000
+otro_mil = 1000
+print(id(mil))
+print(id(otro_mil))
+
+if mil == otro_mil:
+  print("Las dos variables almacenan el mismo valor")
+
+if not (mil is otro_mil):
+  print("Las dos variables no son el mismo objeto")
+```
+   
 
 
 ## Entornos Virtuales

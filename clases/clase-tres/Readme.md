@@ -50,7 +50,40 @@ if isinstance(variable, int):
 elif isinstance(variable, str):
   print("La variable es un string")
 ```
+```mermaid
+flowchart TB
+    subgraph CACHE["Enteros pequeños (integer cache: -5 a 256)"]
+        direction TB
+        uno["uno (variable)"]
+        otro_uno["otro_uno (variable)"]
+        obj1["1\nid: 0x5a3c..."]
+        uno --> obj1
+        otro_uno --> obj1
+    end
 
+    subgraph NOCACHE["Enteros grandes (fuera del cache, > 256)"]
+        direction TB
+        mil["mil (variable)"]
+        otro_mil["otro_mil (variable)"]
+        obj2["1000\nid: 0x7f1a..."]
+        obj3["1000\nid: 0x7f2b..."]
+        mil --> obj2
+        otro_mil --> obj3
+    end
+
+    subgraph RESULTADOS_CACHE["Resultados"]
+        r1["uno == otro_uno  → True ✓"]
+        r2["uno is otro_uno  → True ✓"]
+    end
+
+    subgraph RESULTADOS_NOCACHE["Resultados"]
+        r3["mil == otro_mil  → True ✓"]
+        r4["mil is otro_mil  → False ✗"]
+    end
+
+    CACHE --> RESULTADOS_CACHE
+    NOCACHE --> RESULTADOS_NOCACHE
+```
 ## Tipos de Datos y Objetos
 
 * Built-in functions (Funciones que vienen con el lenguaje)

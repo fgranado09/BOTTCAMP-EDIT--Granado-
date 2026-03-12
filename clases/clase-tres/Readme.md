@@ -47,8 +47,7 @@ if isinstance(variable, int):
   print("La variable es un entero")
 elif isinstance(variable, str):
   print("La variable es un string")
-...
-
+```
 
 ## Tipos de Datos y Objetos
 

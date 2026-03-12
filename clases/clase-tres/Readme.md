@@ -25,8 +25,48 @@
 
 # Python
 
+* Colab de la clase
+> https://colab.research.google.com/drive/1_ecrF_2YjlNHYSldkTU3OJAFp_mrgqGR?usp=sharing
+
+# Condicionales
+
+* Vimos el IF
+
+```python
+# Importo objeto random que ya existe en python y lo programó otro
+import random 
+# Le pido al objeto random que me de un numero entre 1 y 10
+random_number = random.randint(1,10)
+
+if random_number < 5:
+  variable = 10
+else:
+  variable = "Hola"
+
+if isinstance(variable, int):
+  print("La variable es un entero")
+elif isinstance(variable, str):
+  print("La variable es un string")
+´´´
+
 
 ## Tipos de Datos y Objetos
+
+* Built-in functions (Funciones que vienen con el lenguaje)
+  * type
+  * dir
+  * print
+  * input
+  * isinstance
+
+* Funciones de objetos
+  * Los objetos / variables de tipo str
+    * upper
+    * replace
+  * Los objetos / variables de tipo int
+    * bit_length
+    * 
+
 
 ## Entornos Virtuales
 

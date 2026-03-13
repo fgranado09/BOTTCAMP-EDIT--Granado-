@@ -148,8 +148,17 @@ if not (mil is otro_mil):
     * Entornos aislados que tienen una copia de la libreria que usa mi programa
 * El lio de las librerias no es solo en python, cada lenguaje tiene su administrador de paquetes
 
+* Vamos a crear una aplicacion web con la libreria de tkinter usando la IA
+```python
 
+```
 
+## Creacion de enntornos virtuales
+
+* Comando: python -m venv <Nombre> 
+* Esto crea entorno virtual llamado venv y me fijo si me crea una carpeta con ese nombre donde se instalan todas las librerias
+* Se puede tener varios entornos virtuales en el mismo proyectos
+* Vamos a ACTIVAR el entorno (Es decir nos vamos a parar en el entorno virtual)
   
 
 ## Tipos de Aplicaciones

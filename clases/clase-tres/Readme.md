@@ -84,6 +84,8 @@ flowchart TB
     CACHE --> RESULTADOS_CACHE
     NOCACHE --> RESULTADOS_NOCACHE
 ```
+
+
 ## Tipos de Datos y Objetos
 
 * Built-in functions (Funciones que vienen con el lenguaje)
@@ -136,6 +138,19 @@ if not (mil is otro_mil):
 
 
 ## Entornos Virtuales
+
+* Cuando instalas un programa con pip install lo instala global para todos mis programas en python
+  * Se puede ver con:
+    * pip --version
+    * pip show <nombre libreria>
+* Ahora que pasa cuando tengo dos programas que usan la misma libreria pero necesitan versiones distintas?
+  * Hay que usar entornos virtuales
+    * Entornos aislados que tienen una copia de la libreria que usa mi programa
+* El lio de las librerias no es solo en python, cada lenguaje tiene su administrador de paquetes
+
+
+
+  
 
 ## Tipos de Aplicaciones
 

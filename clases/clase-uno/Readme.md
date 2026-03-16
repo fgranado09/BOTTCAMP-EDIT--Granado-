@@ -1,5 +1,11 @@
 # Clase UNO - 04/03/2026
 
+# Glosario
+* Algoritmo:
+  * Secuencia Ordenada y finita de pasos que resuelve un problema especifico o realiza uan tarea determinada
+* Codigo Maquina:
+  * Conjunto de instrucciones binarias que el procesador puede ejecutar directamente
+
 # Roadmap
 
  * Python

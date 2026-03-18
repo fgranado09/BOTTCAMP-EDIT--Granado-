@@ -6,6 +6,7 @@
 * Python
   * Listas
   * Slices
+    * Indices (Indices Negativos)
   * Kivy
     * App para celu multiplataforma
    
@@ -14,6 +15,10 @@
 
 # Python
 ## Tuplas
+
+* Usas la lista cuando los datos cambian
+* Usas las tuplas cuando los datos son fijos
+* Funcionan como las listas a excepcion que no se pueden modificar
 
 ## Rangos
 

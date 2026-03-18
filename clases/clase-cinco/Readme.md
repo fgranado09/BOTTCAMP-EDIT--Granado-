@@ -27,6 +27,7 @@
    * List - []
    * tuple - ()
    * range
+   * enumerate
    * set >>> proximamente
    * dict >>> proximamente
   

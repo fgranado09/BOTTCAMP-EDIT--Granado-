@@ -51,8 +51,8 @@
  * Aplicaciones inteligentes
    * Uso de LLM mediante Api
    * Agentes
-   * Agentes conversacionales (Chatbot especializado en algo: atencion al cliente)
-   * Agentes autonomos (Posteos en redes sociales, actua de manera automatica)
+     * Agentes conversacionales (Chatbot especializado en algo: atencion al cliente)
+     * Agentes autonomos (Posteos en redes sociales, actua de manera automatica)
    
 
 # Arquitectura Full-Stack
@@ -80,3 +80,5 @@
   * Terminal
     * Se abre con CMD o Powershell
   * Alguna IDE como Visual Studio Code (Es un entorno para programar). Tambien hay otras como "cursor" o "windsurf"
+  * claude
+  * Arena (Ir probando)

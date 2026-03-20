@@ -11,7 +11,17 @@
     * enumerate
   * Funciones
     * Declarar funciones con def
+    * Esta curiosidad que una funcion puede devolver varios valores en python y el resultado lo recibo como tupla y lo puedo         desempaquetar
   * Tipos de aplicaciones
     * Aplicaciones Web/APIS
       * Flask
   * Repasamos entornos virtuales
+
+# Colab del dia
+> https://colab.research.google.com/drive/1ylSzFeRYPsqaGpEnLx7J2x_go7hUJq_s?usp=sharing
+
+
+# Tipos de datos que vamos a ver hoy...
+
+* Diccionarios
+* Sets / conjuntos

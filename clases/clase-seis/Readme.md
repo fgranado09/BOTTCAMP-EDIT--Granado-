@@ -25,3 +25,53 @@
 
 * Diccionarios
 * Sets / conjuntos
+
+# Javascripts
+
+* El lenguaje de programacion utizado dentro de los navegadores para la parte de front
+* Si estoy en el navegador y apreto F12 puedo abrir la consola del navegador de Javascript
+* Fue un lenguaje trascendental en el mundo Dev. Todos en alguna manera lidia con el.
+* Javascript puso de moda un lenguaje que se usa para representar informacion, almacennar informacion, comuinicar informacion
+
+# JSON (Javascript Object Notation)
+* En la consola de javascript (F12 en cualquier pagina) puedo declarar un objeto json
+
+```javascript
+
+let persona = {
+  nombre: "Esteban",
+  apellido: "Calabria",
+  edad: 45
+}
+```
+* Luego cuando tengo un objeto en json le puedo consultar en forma separada por cada uno de sus atributos
+
+```javascript
+
+persona.nombre
+
+o
+
+persona["nombre"]
+```
+
+
+* Si hago un paralelismo con la programacion orienta a objetos, un objeto json se centra mas en la parte de datos que la de comportamiento
+* En python vimos que las variables son objetos. Y a los objetos le podes pedir cosas ejecutando metodos sobre ellos
+
+
+# Noticias
+* Ahora hay un lenguaje que sale como alternativa al json que se llama toon (token object notations) (Gastar menos token cuando usamos modelos de lenguaje) - Tenes menos longitud, es mas compacto.
+
+
+
+
+
+
+
+
+
+
+
+
+

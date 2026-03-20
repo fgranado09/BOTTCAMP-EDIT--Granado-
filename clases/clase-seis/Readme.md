@@ -62,6 +62,14 @@ persona["nombre"]
 * Si hago un paralelismo con la programacion orienta a objetos, un objeto json se centra mas en la parte de datos que la de comportamiento
 * En python vimos que las variables son objetos. Y a los objetos le podes pedir cosas ejecutando metodos sobre ellos
 
+## API (Aplication Program Interface)
+* Esta muy relacionado con JSON
+* Es una forma de comunicar programas (Generalmente un backend con un frontend)
+  * Generalmente trabaja sobre el protocolo HTTP (Hipertext transfer protocol o protocolo para transferir texto)
+  * Hoy se usa el HTTPS que le agrega seguridad
+* Lo puedo pennsar como si fuera una aplicacion web pero en vez de devolver HTML, devuelve y recibe JSON.
+* Ejemplos de API
+  * 
 
 # Noticias
 * Ahora hay un lenguaje que sale como alternativa al json que se llama toon (token object notations) (Gastar menos token cuando usamos modelos de lenguaje) - Tenes menos longitud, es mas compacto.
@@ -198,6 +206,9 @@ for clave, valor in automovil.items():
     print(f"{clave} : {valor}")
 
 ```
+
+## Tareas
+* Leer sobre HTTP
 
 
 

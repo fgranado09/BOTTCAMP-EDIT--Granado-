@@ -68,8 +68,10 @@ persona["nombre"]
   * Generalmente trabaja sobre el protocolo HTTP (Hipertext transfer protocol o protocolo para transferir texto)
   * Hoy se usa el HTTPS que le agrega seguridad
 * Lo puedo pennsar como si fuera una aplicacion web pero en vez de devolver HTML, devuelve y recibe JSON.
-* Ejemplos de API
-  * 
+* Ejemplos de API (Devuelve toda la info en JSON)
+  * https://rickandmortyapi.com/api/character << Nombre de los personas de Rick y Morty
+  * https://pokeapi.co/api/v2/pokemon << API de Pokemon
+  * https://thesimpsonsapi.com/api/characters << Personajes de los simpsons
 
 # Noticias
 * Ahora hay un lenguaje que sale como alternativa al json que se llama toon (token object notations) (Gastar menos token cuando usamos modelos de lenguaje) - Tenes menos longitud, es mas compacto.
@@ -207,8 +209,51 @@ for clave, valor in automovil.items():
 
 ```
 
+## Trabajar con JSON 
+* Algo de todos los dias (Sobre todo si se trabaja con APIS) es pasar de un diccionario a JSON (str) y de un JSON a un diccionario
+
+## Convertir diccionario a JSON
+
+```python
+
+import json # Hay que traerlo
+
+persona = {
+    "nombre" : "Juan",
+    "apellido" : "Perez",
+    "edad" : 30,
+}
+
+# El dumps convierte un diccionario a un string con su representacion json
+json_str = json.dumps(persona)
+
+print(type(json_str))
+print(json_str)
+```
+
+## Convertir JSON a Diccionario
+```python
+
+# JSON a diccionario
+
+cadena_con_json = """
+{"count":1350,"next":"https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20","previous":null,"results":[{"name":"bulbasaur","url":"https://pokeapi.co/api/v2/pokemon/1/"},{"name":"ivysaur","url":"https://pokeapi.co/api/v2/pokemon/2/"},{"name":"venusaur","url":"https://pokeapi.co/api/v2/pokemon/3/"},{"name":"charmander","url":"https://pokeapi.co/api/v2/pokemon/4/"},{"name":"charmeleon","url":"https://pokeapi.co/api/v2/pokemon/5/"},{"name":"charizard","url":"https://pokeapi.co/api/v2/pokemon/6/"},{"name":"squirtle","url":"https://pokeapi.co/api/v2/pokemon/7/"},{"name":"wartortle","url":"https://pokeapi.co/api/v2/pokemon/8/"},{"name":"blastoise","url":"https://pokeapi.co/api/v2/pokemon/9/"},{"name":"caterpie","url":"https://pokeapi.co/api/v2/pokemon/10/"},{"name":"metapod","url":"https://pokeapi.co/api/v2/pokemon/11/"},{"name":"butterfree","url":"https://pokeapi.co/api/v2/pokemon/12/"},{"name":"weedle","url":"https://pokeapi.co/api/v2/pokemon/13/"},{"name":"kakuna","url":"https://pokeapi.co/api/v2/pokemon/14/"},{"name":"beedrill","url":"https://pokeapi.co/api/v2/pokemon/15/"},{"name":"pidgey","url":"https://pokeapi.co/api/v2/pokemon/16/"},{"name":"pidgeotto","url":"https://pokeapi.co/api/v2/pokemon/17/"},{"name":"pidgeot","url":"https://pokeapi.co/api/v2/pokemon/18/"},{"name":"rattata","url":"https://pokeapi.co/api/v2/pokemon/19/"},{"name":"raticate","url":"https://pokeapi.co/api/v2/pokemon/20/"}]}
+"""
+
+diccionario = json.loads(cadena_con_json)
+
+print(type(diccionario))
+print(diccionario)
+
+# Mostrar nombre de segundo pokemon
+
+print(f"El nombre del segundo Pokemon es {diccionario["results"][1]["name"]} y su URL es {diccionario["results"][1]["url"]}")
+
+```
+
 ## Tareas
 * Leer sobre HTTP
+* Preguntar a GPT "Que seria en el codigo tener un valor hardcodeado y porque es algo que habria que evitar a la hora de programar bien"
 
 
 

@@ -161,6 +161,41 @@ print(funcion_aun_no_implementada_con_error)
 
 ```
 
+* Funciones como parametro de funciones
+
+```python
+# Todas las funciones tienen que tener un cuerpo
+# Si quiero declarar una funcion vacia en el cuerpo tengo que poner "pass"
+def funcion_ejemplo():
+  pass
+
+def mostrar_tipo_parametro(parametro):
+  print(type(parametro))
+
+mostrar_tipo_parametro(5) # Numero (Int)
+mostrar_tipo_parametro(funcion_ejemplo) # Funcion
+
+variable_tipo_funcion = funcion_ejemplo
+mostrar_tipo_parametro(variable_tipo_funcion) # Funcion
+
+def sumar(a,b):
+  return a+b
+
+def restar(a,b):
+  return a-b
+
+def operar(fn,a,b):
+  return fn(a,b)
+
+
+resultado = operar(sumar,1,2)
+print(resultado)
+
+resultado = operar(restar,1,2)
+print(resultado)
+
+```
+
 
 
 # Distintos lenguajes

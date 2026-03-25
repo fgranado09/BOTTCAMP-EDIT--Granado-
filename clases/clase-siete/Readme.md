@@ -94,12 +94,40 @@ inspeccionar_parametros(*tupla)  # Se hace con un asterisco adelante
 
 ```
 
-# Parametros por defecto
+# Parametros opcionnales o por defecto
 
 ```python
+def saludo_formal (nombre = "Desconocido"):
+  print(f"Hola {nombre}")
 
+# Se puede invocar de dos maneras distintas
+saludo_formal()
+saludo_formal("Juan")
+
+separador()
+
+# Siempre el parametro opcional va al final
+
+def saludo_completo (nombre , apellido = "Snow"):
+  print (f"Hola {nombre} {apellido}")
+
+saludo_completo("Jhon")
+saludo_completo(nombre = "Jhon")
+saludo_completo(apellido = "Snow", nombre = "John")
+saludo_completo ("John", apellido = "Stark")
+saludo_completo("Jhon", "Snow")
+
+# Tira error si hago 
+try:
+  saludo_completo(apellido = "Stark")
+except Exception as e:
+  print("Si no le pongo el nombre me tira error")
 ```
 
+* Parametros diccionario (Cantidad Variable de parametros con nombre)
+
+```python
+```
 
 
 

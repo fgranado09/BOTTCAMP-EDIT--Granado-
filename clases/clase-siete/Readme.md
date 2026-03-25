@@ -53,6 +53,52 @@ saludar_con_parametros(apellido="Granado",nombre="Florencia")
 separador()
 ```
 
+* Cantidad variable de parametros con tuplas
+
+```python
+# Funciones que reciben una cantidad variable de paramertros
+
+# Basicamente estamos recibiendo una tupla
+def sumar (*numeros): # El asterisco representa una cantidad variable de elementos
+  suma = 0
+  for numero in numeros:
+    suma += numero
+  return suma
+
+resultado = sumar (1,2,3,4,5,6,7,8,9,10)
+print(resultado);
+
+resultado = sumar (1,2,3)
+print (resultado)
+
+separador()
+
+# Inspeccionar Parametros
+
+def inspeccionar_parametros (*args):
+  print("Recibi ", args);
+  print("De tipo ", type(args));
+  print("Cantidad de parametros recibidos, ", len(args));
+
+inspeccionar_parametros(1,2,3,4,5)
+
+separador()
+
+tupla = (1,2,3,4,5)
+inspeccionar_parametros(tupla)
+
+separador()
+
+# Si quiero convertir cada elemento de una tupla en un parametro separado al tengo que "desempaquetar"
+inspeccionar_parametros(*tupla)  # Se hace con un asterisco adelante
+
+```
+
+# Parametros por defecto
+
+```python
+
+```
 
 
 

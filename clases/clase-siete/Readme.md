@@ -143,6 +143,24 @@ def mostrar_solo_valores (**datos):
 
 mostrar_solo_valores(nombre = "Florencia", apellido = "Granado")
 ```
+* Funciones aun sin implementar
+
+```python
+def funcion_aun_no_implementada():
+  return NotImplemented
+
+# Se usa cuando queres declarar que en el futuro vas a implementar esta funcion pero por ahora no llegaste
+resultado = funcion_aun_no_implementada()
+print(resultado)
+
+# Otra opcion es que si llaman a esta funcion sale un error
+def funcion_aun_no_implementada_con_error():
+  raise NotImplementedError #Si invocas esta funcion se aborta todo
+
+print(funcion_aun_no_implementada_con_error)
+
+```
+
 
 
 # Distintos lenguajes

@@ -24,6 +24,39 @@
 
 # Funciones en Python
 
+* Link de Colab
+> https://colab.research.google.com/drive/1As6cDwldTeZq7jNTnllSsR0V7RQvgYQx?usp=sharing
+
+```python
+def separador():
+  print("-----------------")
+
+def saludar ():
+  print("Hola Mundo")
+
+resultado = saludar()
+print(f"La funcion saludar devolvio {resultado}") # Devuelve None 
+
+separador()
+
+def saludar_con_parametros (nombre,apellido):
+  print(f"Hola {nombre} {apellido}")
+
+# Invoco una funcion especificando paramentros por nombre
+saludar_con_parametros("Juan","Perez") # Es obligatorio pasar todos los parametros sino arroja error
+
+separador()
+# Pasar parametros segun nombre
+
+saludar_con_parametros(apellido="Granado",nombre="Florencia")
+
+separador()
+```
+
+
+
+
+
 # Distintos lenguajes
 
 # Tipos de Apps en Python

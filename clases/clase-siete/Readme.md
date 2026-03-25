@@ -196,8 +196,38 @@ print(resultado)
 
 ```
 
+# Inteligencia Artificial
+
+* Repositorio de Modelos Open Source de IA
+> https://huggingface.co/
+
+* Tarea: Crear un usaurio de HuggingFace
+* En IA los modelos se dividen en dos categorias
+  * Los propietarios
+    * GPT
+    * Claude
+  * Modelos Open Source
+    * Familia Llama (Los que puedan usar en wp)
+  * Todos los modelos open source se suben a hugging face
+  * Es como el github de los modelos open source
+  * Tienen una seccion que se llama Spaces que te permite probar online los modelos open source
+    * Ejemplo: Flux --> Para generar imagenes
+      > https://huggingface.co/spaces/black-forest-labs/FLUX.1-dev
+  * La interfaz grafica de todos los spaces se programa con una libreria que se llama Gradio
+  * Gradio es una libreria por excelencia para hacer y compartir interfaces visuales de prueba para cosas de IA
+    * Las interfaces de Gradio se pueden ejecutar en el Colab
 
 
 # Distintos lenguajes
 
 # Tipos de Apps en Python
+
+* Ya vimos
+  * Apps de escritorio --> tkinter
+  * Multiplataforma --> kivy
+  * Juegos --> pygame
+  * Apis --> flask
+
+## Interfaces Gradio
+
+* Para propotipos de IA --> Gradio

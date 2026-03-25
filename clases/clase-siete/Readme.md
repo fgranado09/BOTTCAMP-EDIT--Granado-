@@ -127,8 +127,22 @@ except Exception as e:
 * Parametros diccionario (Cantidad Variable de parametros con nombre)
 
 ```python
-```
+def mostrar_datos (**datos):
+  print(datos)
+  print(type(datos))
 
+mostrar_datos(nombre = "Juan", apellido = "Perez")
+
+separador()
+
+# Para que muestre solo valores
+
+def mostrar_solo_valores (**datos):
+  for valor in datos.values():
+    print(valor)
+
+mostrar_solo_valores(nombre = "Florencia", apellido = "Granado")
+```
 
 
 # Distintos lenguajes

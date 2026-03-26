@@ -231,3 +231,58 @@ print(resultado)
 ## Interfaces Gradio
 
 * Para propotipos de IA --> Gradio
+
+```python
+import gradio as gr
+
+def saludar(nombre):
+  return f"Hola {nombre}"
+
+interfaz = gr.Interface(fn = saludar, inputs = "text", outputs = "text")
+interfaz.launch()
+```
+
+* Gradio facilita la generacion de interfaces graficas para prototipos IA
+* Genera uns utl publica para que cualquier persona pueda probar mi codigo
+* Por defecto las interfaces gradio tienen un boton de submit
+
+# Ejercicio 
+* El programa va a determinar un numero al azar entre 1 y 100. El usuario debe adivinar ese numero y para ello tiene 5 oportunidades. El sistema le pregunta al usuario cual piensa que es el numero secreto. Si el usuario acierta, gana. Sino la maquina le informa si el numero secreto es mayor o menor al que el usuario pensaba. Si se le terminan las oportunidades para adivinar pierde. Usar Print e input.
+
+```python
+import random
+ 
+numero_secreto = random.randint(1, 100)
+oportunidades = 5
+ 
+print("=== ADIVINA EL NÚMERO ===")
+print(f"Tenés {oportunidades} oportunidades para adivinar un número entre 1 y 100.")
+print()
+ 
+for intento in range(1, oportunidades + 1):
+    print(f"Oportunidad {intento} de {oportunidades}")
+    respuesta = input("¿Cuál creés que es el número secreto? ")
+ 
+    if not respuesta.isdigit():
+        print("Por favor ingresá un número válido.\n")
+        continue
+ 
+    numero_usuario = int(respuesta)
+ 
+    if numero_usuario == numero_secreto:
+        print(f"\n¡Felicitaciones! ¡Adivinaste! El número secreto era {numero_secreto}. 🎉")
+        break
+    elif numero_usuario < numero_secreto:
+        print("El número secreto es MAYOR al que dijiste.\n")
+    else:
+        print("El número secreto es MENOR al que dijiste.\n")
+else:
+    print(f"\n¡Se te acabaron las oportunidades! El número secreto era {numero_secreto}. 😔")
+```
+
+* Prompt copado para usar para la misma actividad
+
+Ahora voy a hacer una aplicacion en gradio para correrlo en google colab , este es mi promt , primero mejoralo para que sea con mucha interacion visual , que tenga easter eggs y quiero que tenga trampas y sorpresas
+El programa va a determinar un numero al azar entre 1 y 100. El usuario debe adivinar ese numero y para ello tiene 5 oportunidades. El sistema le pregunta al usuario cual piensa que es el numero secreto. Si el usuario acierta, gana. Sino la maquina le informa si el numero secreto es mayor o menor al que el usuario pensaba. Si se le terminan las oportunidades para adivinar pierde. Usar Print e input.
+
+* Revisar codigo que paso compañero para analizar

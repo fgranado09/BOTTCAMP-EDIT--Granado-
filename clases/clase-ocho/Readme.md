@@ -33,3 +33,31 @@
     * Tiene personalizacion
     * No tiene limite de tokens
   * Deepseek (El que invento el modo razonamiento)
+ 
+# IDES especializadas en IA
+* Cursor
+  * Esta pensado para desarrollar proyectos grandes
+  * Mantiene mucho mejor el contexto de toda la estructura del proyecto
+  * CTA (Call to action)
+ 
+
+# Python
+
+## Modulos de Python
+
+* Proyectos Grandes
+ * El junior tiende a meter todo en un solo archivo ---> El senior sabe organizar su codigo en forma eficiente dividiendolo en varios archivos. (Averiguar de que manera) 
+ * 
+
+
+
+
+
+
+
+
+
+
+
+
+

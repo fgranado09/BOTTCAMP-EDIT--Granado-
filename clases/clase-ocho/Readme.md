@@ -234,6 +234,8 @@ print(calculadora.sumar(1, 2))
 * 
 
 
+* Me quede en la hora 49 y me falta ver librerias. En esta clase Django
+
 
 
 

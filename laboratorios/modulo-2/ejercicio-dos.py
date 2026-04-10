@@ -12,9 +12,10 @@ while a <= 10:
 # está vacío, volver a pedirlo hasta que ingrese
 # un nombre. Luego, saludar al usuario.
 
-nombre_usuario = ""
+nombre_usuario = input("Ingrese su nombre: ") 
 
 while nombre_usuario == "":
+    print("Error: El nombre de usuario no puede estar vacío.")
     nombre_usuario = input("Ingrese su nombre de usuario: ")
 print("Hola", nombre_usuario, "!")
 

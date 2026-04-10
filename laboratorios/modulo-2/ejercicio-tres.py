@@ -16,3 +16,12 @@ print(nombres)
 
 for nombre in nombres: #For se utiliza para recorrer cada elemento de la lista
     print(nombre)
+
+# Otra manera de hacerlo
+
+indice = 0
+
+while indice < len(nombres): #While se utiliza para recorrer la lista utilizando un indice
+    print(nombres[indice])
+    indice += 1 
+

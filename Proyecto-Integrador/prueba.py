@@ -52,28 +52,8 @@ def ver_cursos(alumnos):
     else: 
         print("Este alumno no existe en la lista")
 
-# === Codigo Principal ===
 
-if autenticar():
-    # Bucle infito que muestra el menu hasta que el usuario decida salir
-    while True:
-        print("Menú")
-        print("1 - Añadir un alumno")
-        print("2 - Ver lista de alumnos")
-        print("3 - Ver cantidad de cursos")
-        print("4 - Salir")
-        opcion = input("Opcion: ")
+# === Ventana ===
 
-        if opcion == "1":
-            agregar_alumnos(alumnos)
-        elif opcion == "2":
-            ver_alumnos(alumnos)
-        elif opcion == "3":
-            ver_cursos(alumnos)
-        elif opcion == "4":
-            print("Gracias por utilizar el programa")
-            break # Rompe el bucle y termina el programa
-        else:
-            print("La opcion seleccionada es invalida")
-else:
-    print("Usuario o contraseña incorrectos")
+ventana = tk.Tk()
+ventana.config (width =  400, height =  300)

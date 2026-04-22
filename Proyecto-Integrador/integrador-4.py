@@ -5,7 +5,7 @@
 
 # === Integracion Tkinter para desarrollo de app de escritorio ===
 
-import Tkinter as tk
+import tkinter as tk
 
 # === Diccionarios ===
 
@@ -77,3 +77,5 @@ if autenticar():
             print("La opcion seleccionada es invalida")
 else:
     print("Usuario o contraseña incorrectos")
+
+

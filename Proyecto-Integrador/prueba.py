@@ -5,7 +5,7 @@
 
 # === Integracion Tkinter para desarrollo de app de escritorio ===
 
-import Tkinter as tk
+import tkinter as tk
 
 # === Diccionarios ===
 
@@ -56,4 +56,7 @@ def ver_cursos(alumnos):
 # === Ventana ===
 
 ventana = tk.Tk()
-ventana.config (width =  400, height =  300)
+ventana.config (width =  700, height =  700)
+ventana.tittle
+
+ventana.mainloop()

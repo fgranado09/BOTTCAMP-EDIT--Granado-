@@ -1,0 +1,11 @@
+C:\Users\Administrador\BOTTCAMP-EDIT--Granado-\modulos\mod-seis\HolaMundo\bin\Debug\netcoreapp2.2\HolaMundo.deps.json
+C:\Users\Administrador\BOTTCAMP-EDIT--Granado-\modulos\mod-seis\HolaMundo\bin\Debug\netcoreapp2.2\HolaMundo.runtimeconfig.json
+C:\Users\Administrador\BOTTCAMP-EDIT--Granado-\modulos\mod-seis\HolaMundo\bin\Debug\netcoreapp2.2\HolaMundo.runtimeconfig.dev.json
+C:\Users\Administrador\BOTTCAMP-EDIT--Granado-\modulos\mod-seis\HolaMundo\bin\Debug\netcoreapp2.2\HolaMundo.dll
+C:\Users\Administrador\BOTTCAMP-EDIT--Granado-\modulos\mod-seis\HolaMundo\bin\Debug\netcoreapp2.2\HolaMundo.pdb
+C:\Users\Administrador\BOTTCAMP-EDIT--Granado-\modulos\mod-seis\HolaMundo\obj\Debug\netcoreapp2.2\HolaMundo.csprojAssemblyReference.cache
+C:\Users\Administrador\BOTTCAMP-EDIT--Granado-\modulos\mod-seis\HolaMundo\obj\Debug\netcoreapp2.2\HolaMundo.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\BOTTCAMP-EDIT--Granado-\modulos\mod-seis\HolaMundo\obj\Debug\netcoreapp2.2\HolaMundo.AssemblyInfoInputs.cache
+C:\Users\Administrador\BOTTCAMP-EDIT--Granado-\modulos\mod-seis\HolaMundo\obj\Debug\netcoreapp2.2\HolaMundo.AssemblyInfo.cs
+C:\Users\Administrador\BOTTCAMP-EDIT--Granado-\modulos\mod-seis\HolaMundo\obj\Debug\netcoreapp2.2\HolaMundo.dll
+C:\Users\Administrador\BOTTCAMP-EDIT--Granado-\modulos\mod-seis\HolaMundo\obj\Debug\netcoreapp2.2\HolaMundo.pdb

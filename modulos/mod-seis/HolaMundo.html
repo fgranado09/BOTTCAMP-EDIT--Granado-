@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Saludo</title>
+</head>
+<body>
+
+    <h1>Bienvenido</h1>
+    <p>Ingresá tu nombre para recibir un saludo:</p>
+
+    <!-- Campo de texto donde el usuario escribe su nombre -->
+    <input type="text" id="nombreInput" placeholder="Tu nombre" />
+    <!-- Botón que llama a la función saludar() al hacer clic -->
+    <button onclick="saludar()">Saludar</button>
+
+    <!-- Párrafo vacío donde se va a mostrar el saludo -->
+    <p id="saludo"></p>
+
+    <script>
+        // Función principal que genera el saludo
+        function saludar() {
+            // Obtiene el texto que escribió el usuario en el input
+            let nombre = document.getElementById("nombreInput").value;
+
+            // Si el campo está vacío, muestra una alerta y detiene la función
+            if (nombre === "") {
+                alert("Por favor, ingresá tu nombre.");
+                return;
+            }
+
+            // Escribe el saludo en el párrafo con id="saludo"
+            document.getElementById("saludo").textContent = "¡Hola, " + nombre + "!";
+        }
+
+        // Permite ejecutar la función también presionando la tecla Enter
+        document.getElementById("nombreInput").addEventListener("keypress", function(e) {
+            if (e.key === "Enter") saludar();
+        });
+    </script>
+
+</body>
+</html>

@@ -130,3 +130,99 @@ while a < 5: # Mientras a sea menor o igual a 5, se va a ejecutar el bloque de c
     print("Desde python")
     a = a + 1 # Incrementamos el valor de a en 1, para evitar un bucle infinito
 print("Fin del programa")
+
+separador() 
+
+# Listas
+
+# Una lista es una coleccion de elementos, es un tipo de dato que permite almacenar varios valores en una sola variable. Se pueden modificar, agregar o eliminar elementos de la lista.
+
+alumnos = ["Juan", "Sofia", "Matias"]
+print(alumnos) # Imprime la lista completa
+print(alumnos[0]) # Imprime el primer elemento de la lista, que es "Juan". Esto es un indice, que empieza desde 0.
+print(alumnos[1]) # Imprime el segundo elemento de la lista, que es "Sofia" 
+print(alumnos[2]) # Imprime el tercer elemento de la lista, que es "Matias" 
+
+separador()
+
+# Operaciones sobre listas
+
+alumnos = ["Juan", "Sofia", "Matias"]
+
+# Agregar un elemento a la lista
+alumnos.append("Lucia") # Agrega el elemento "Lucia" al final de la lista
+
+print(alumnos) # Imprime la lista completa, que ahora es ["Juan", "Sofia", "Matias", "Lucia"]
+
+# Para insertar un elemento en una posicion especifica, se puede usar el metodo insert
+alumnos.insert(1, "Pedro") # Inserta el elemento "Pedro" en la posicion 1 de la lista, desplazando los demas elementos hacia la derecha
+
+print(alumnos) # Imprime la lista completa, que ahora es ["Juan", "Pedro", "Sofia", "Matias", "Lucia"]
+
+# Para reemplazar un elemento de la lista, se puede usar el indice para asignar un nuevo valor
+alumnos[2] = "Maria" # Reemplaza el elemento en la posicion 2 de la lista, que es "Matias", por "Maria" 
+
+print(alumnos) # Imprime la lista completa, que ahora es ["Juan", "Pedro", "Maria", "Matias", "Lucia"]
+
+# Para eliminar un elemento de la lista, se puede usar el metodo remove
+del alumnos[3] # Elimina el elemento en la posicion 3 de la lista, que es "Lucia"
+
+print(alumnos) # Imprime la lista completa, que ahora es ["Juan", "Pedro", "Maria"]
+
+separador()
+
+# Bucle For
+
+# El bucle for es una estructura de control que permite repetir un bloque de codigo un numero determinado de veces, o iterar sobre los elementos de una coleccion (como una lista).
+alumnos = ["Juan", "Sofia", "Matias"]
+
+for alumno in alumnos: # Para cada elemento x en la lista alumnos, se va a ejecutar el bloque de codigo del for
+    print("Hola mundo") # Imprime "Hola mundo" para cada elemento de la lista alumnos
+    print(alumno) # Imprime el valor de x, que es cada elemento de la lista alumnos
+
+print("Fin del programa")
+
+# Ejemplo con mails
+
+for alumno in alumnos:
+  #  enviar_mail(alumno) # Envia un mail a cada alumno de la lista alumnos, usando la funcion enviar_mail (que no esta definida en este codigo, pero se asume que existe)
+  print("Enviando mail a:", alumno)
+
+
+separador()
+
+# Las instrucciones "Continue" y "Break"
+
+# Continue: Permite saltar el bloque de codigo del for y pasar al siguiente elemento de la lista, sin ejecutar el bloque de codigo del for para ese elemento.
+
+primos = [1, 2, 3, 5, 7, 11, 13]
+
+for numero in primos: 
+    if numero == 5:
+        continue # Si el numero es 5, se salta el bloque de codigo del for y se pasa al siguiente numero de la lista primos
+    print(numero) # Imprime el numero, excepto el numero 5
+
+# Break: Permite salir del bucle for, sin importar si se han iterado todos los elementos de la lista o no.
+
+for numero in primos :
+    if numero == 5:
+        break # Si el numero es 5, se sale del bucle for y no se iteran los siguientes numeros de la lista primos
+    print(numero) # Imprime el numero, pero se detiene cuando llega al numero 5
+
+
+# Matrices
+
+# Una matriz es una lista de listas, es decir, una coleccion de listas que a su vez son elementos de otra lista. Se pueden usar para representar tablas de datos, como una hoja de calculo o una base de datos.
+
+# Con cantidad de cursos realizados por cada alumno
+
+alumnos = [
+    ["Juan", 2], 
+    ["Matias", 5], 
+    ["Sofia", 5]
+]
+
+print(alumnos[1]) # Imprime la lista del segundo alumno, que es ["Matias", 5]
+print (alumnos[1][0]) # Imprime el nombre del segundo alumno, que es "Matias"
+print (alumnos[1][1]) # Imprime la cantidad de cursos realizados por el
+
